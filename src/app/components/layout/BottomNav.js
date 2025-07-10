@@ -93,7 +93,7 @@ export default function BottomNav() {
   const activeTab = useActiveTab();
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 z-50 bg-[#fcfbf8] border-t border-[#f4f0e6] safe-area-pb">
+    <nav className="fixed bottom-0 left-0 right-0 z-50 bg-[#1045a2] border-t border-[#2563eb] safe-area-pb">
       <div className="flex gap-1 px-4 pb-2 pt-2">
         {navItems.map((item) => {
           const isActive = activeTab === item.key;
@@ -103,8 +103,8 @@ export default function BottomNav() {
               href={item.href}
               className={`flex flex-1 flex-col items-center gap-1 transition-all duration-200 rounded-lg p-2 ${
                 isActive
-                  ? "text-[#1d180c] bg-[#f4f0e6] scale-105"
-                  : "text-[#a18745] hover:text-[#1d180c] hover:bg-[#f4f0e6]/50 active:scale-95"
+                  ? "text-white bg-[#1e40af] scale-105"
+                  : "text-[#7cb8ff] hover:text-white hover:bg-[#1e40af]/50 active:scale-95"
               }`}
             >
               <div className="flex h-6 items-center justify-center">

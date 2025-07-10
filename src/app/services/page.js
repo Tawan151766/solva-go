@@ -29,16 +29,16 @@ export default function ServicesPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#fcfbf8] font-sans">
+    <div className="min-h-screen bg-[#1045a2] font-sans">
       <PageHeader title="Our Services" />
 
       {/* Main Content */}
       <main className="max-w-4xl mx-auto px-4 py-6">
         <div className="text-center mb-12">
-          <h2 className="text-[#1d180c] text-3xl font-bold mb-4">
+          <h2 className="text-white text-3xl font-bold mb-4">
             Professional Web Solutions
           </h2>
-          <p className="text-[#a18745] text-lg max-w-2xl mx-auto">
+          <p className="text-[#7cb8ff] text-lg max-w-2xl mx-auto">
             We offer comprehensive web services to help your business succeed online. 
             From development to maintenance, we've got you covered.
           </p>
@@ -49,20 +49,20 @@ export default function ServicesPage() {
           {services.map((service, index) => (
             <div 
               key={index} 
-              className="bg-white rounded-2xl p-6 shadow-sm border border-[#eae1cd] hover:shadow-md transition-shadow duration-200"
+              className="bg-[#1e40af] rounded-2xl p-6 shadow-sm border border-[#2563eb] hover:shadow-md transition-shadow duration-200"
             >
-              <h3 className="text-[#1d180c] text-xl font-bold mb-3">
+              <h3 className="text-white text-xl font-bold mb-3">
                 {service.title}
               </h3>
-              <p className="text-[#a18745] text-base mb-4 leading-relaxed">
+              <p className="text-[#7cb8ff] text-base mb-4 leading-relaxed">
                 {service.description}
               </p>
               
               <div className="mb-6">
-                <h4 className="text-[#1d180c] font-semibold mb-2">Features:</h4>
+                <h4 className="text-white font-semibold mb-2">Features:</h4>
                 <ul className="space-y-1">
                   {service.features.map((feature, idx) => (
-                    <li key={idx} className="text-[#a18745] text-sm flex items-center">
+                    <li key={idx} className="text-[#7cb8ff] text-sm flex items-center">
                       <span className="text-[#f4af00] mr-2">✓</span>
                       {feature}
                     </li>
@@ -71,10 +71,10 @@ export default function ServicesPage() {
               </div>
 
               <div className="flex items-center justify-between">
-                <span className="text-[#1d180c] font-bold text-lg">
+                <span className="text-white font-bold text-lg">
                   {service.price}
                 </span>
-                <button className="bg-[#f4af00] hover:bg-[#e09e00] text-[#1d180c] font-semibold px-4 py-2 rounded-lg transition-colors duration-200">
+                <button className="bg-[#f4af00] hover:bg-[#e09e00] text-[#1045a2] font-semibold px-4 py-2 rounded-lg transition-colors duration-200">
                   Learn More
                 </button>
               </div>
@@ -83,14 +83,14 @@ export default function ServicesPage() {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center mt-12 bg-[#f4f0e6] rounded-2xl p-8">
-          <h3 className="text-[#1d180c] text-2xl font-bold mb-4">
+        <div className="text-center mt-12 bg-[#1e40af] rounded-2xl p-8">
+          <h3 className="text-white text-2xl font-bold mb-4">
             Ready to Get Started?
           </h3>
-          <p className="text-[#a18745] text-base mb-6">
+          <p className="text-[#7cb8ff] text-base mb-6">
             Contact us today for a free consultation and let's discuss your project.
           </p>
-          <button className="bg-[#f4af00] hover:bg-[#e09e00] text-[#1d180c] font-bold px-8 py-3 rounded-lg transition-all duration-200 transform hover:scale-105">
+          <button className="bg-[#f4af00] hover:bg-[#e09e00] text-[#1045a2] font-bold px-8 py-3 rounded-lg transition-all duration-200 transform hover:scale-105">
             Get Free Quote
           </button>
         </div>

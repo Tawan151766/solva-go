@@ -4,7 +4,7 @@ export default function BackButton({ onClick, className = '' }) {
   return (
     <button 
       onClick={onClick}
-      className={`text-[#1d180c] hover:text-[#a18745] transition-all duration-200 p-2 -ml-2 rounded-lg hover:bg-[#f4f0e6] hover:scale-110 ${className}`}
+      className={`text-white hover:text-[#7cb8ff] transition-all duration-200 p-2 -ml-2 rounded-lg hover:bg-[#1e40af] hover:scale-110 ${className}`}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

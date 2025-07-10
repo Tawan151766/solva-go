@@ -18,7 +18,7 @@ export default function PageHeader({
   };
 
   return (
-    <header className={`sticky top-0 z-10 bg-[#fcfbf8] border-b border-[#eae1cd] ${className}`}>
+    <header className={`sticky top-0 z-10 bg-[#1045a2] border-b border-[#2563eb] ${className}`}>
       <div className="flex items-center justify-between p-4">
         {showBackButton ? (
           <BackButton onClick={handleBackClick} />
@@ -27,7 +27,7 @@ export default function PageHeader({
         )}
         
         {title && (
-          <h1 className="text-[#1d180c] text-xl font-bold text-center">
+          <h1 className="text-white text-xl font-bold text-center">
             {title}
           </h1>
         )}

@@ -9,10 +9,10 @@ export default function TemplateCard({ template, onClick }) {
         style={{ backgroundImage: `url("${template.image}")` }}
       ></div>
       <div>
-        <p className="text-[#1d180c] text-base font-medium leading-normal">
+        <p className="text-white text-base font-medium leading-normal">
           {template.title}
         </p>
-        <p className="text-[#a18745] text-sm font-normal leading-normal">
+        <p className="text-[#7cb8ff] text-sm font-normal leading-normal">
           {template.description}
         </p>
       </div>
