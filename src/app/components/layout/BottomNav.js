@@ -104,7 +104,7 @@ export default function BottomNav() {
               className={`flex flex-1 flex-col items-center gap-1 transition-all duration-200 rounded-lg p-2 ${
                 isActive
                   ? "text-[#f0c674] bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-md scale-105"
-                  : "text-[#f0c674] hover:text-[#f0c674] hover:bg-gradient-to-br hover:from-white/20 hover:to-white/5 hover:backdrop-blur-md/50 active:scale-95"
+                  : "text-[#ffd700] hover:text-[#f0c674] hover:bg-gradient-to-br hover:from-white/20 hover:to-white/5 hover:backdrop-blur-md/50 active:scale-95"
               }`}
             >
               <div className="flex h-6 items-center justify-center">

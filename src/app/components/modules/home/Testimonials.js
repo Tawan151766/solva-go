@@ -23,7 +23,7 @@ export default function Testimonials() {
         {people.map((p, i) => (
           <div key={i} className="min-w-60 bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-md border border-white/20 rounded-lg p-4 hover:bg-gradient-to-br hover:from-white/30 hover:to-white/10 transition-colors">
             <p className="text-[#f0c674] font-medium">"{p.quote}"</p>
-            <p className="text-[#f0c674] text-sm mt-2">{p.name}, {p.role}</p>
+            <p className="text-[#ffd700] text-sm mt-2">{p.name}, {p.role}</p>
           </div>
         ))}
       </div>
