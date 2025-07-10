@@ -13,7 +13,7 @@ export default function TestimonialsPage() {
           <h2 className="text-[#f0c674] text-3xl font-bold leading-tight mb-3">
             What Our Elite Clients Say
           </h2>
-          <p className="text-[#ffd700] text-base leading-relaxed max-w-md mx-auto">
+          <p className="text-[#f0c674] text-base leading-relaxed max-w-md mx-auto">
             Discover what our distinguished clients have to say about their premium experience with
             SolvaGo.
           </p>

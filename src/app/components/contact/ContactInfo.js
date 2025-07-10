@@ -54,7 +54,7 @@ export default function ContactInfo() {
               <p className="text-[#f0c674] text-base font-medium break-words">
                 {item.label}
               </p>
-              <p className="text-[#ffd700] text-sm mt-1 capitalize">
+              <p className="text-[#f0c674] text-sm mt-1 capitalize">
                 {item.type}
               </p>
             </div>

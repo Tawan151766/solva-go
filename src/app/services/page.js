@@ -101,7 +101,7 @@ export default function ServicesPage() {
                 <span className="text-white font-bold text-lg">
                   {service.price}
                 </span>
-                <button className="h-12 px-5 rounded-lg bg-[#f0c674] text-[#0d1117] font-bold hover:bg-[#ffd700] transition-colors">
+                <button className="h-12 px-5 rounded-lg bg-[#f0c674] text-[#0d1117] font-bold hover:bg-[#f0c674] transition-colors">
                   Learn More
                 </button>
               </div>

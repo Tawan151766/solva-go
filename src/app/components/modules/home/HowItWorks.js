@@ -18,7 +18,7 @@ export default function HowItWorks() {
           <div key={index} className="flex items-start gap-4 relative">
             {/* Timeline Line */}
             {index !== steps.length - 1 && (
-              <div className="absolute left-4 top-8 w-0.5 h-full bg-[#ffd700] z-0" />
+              <div className="absolute left-4 top-8 w-0.5 h-full bg-[#f0c674] z-0" />
             )}
             
             {/* Timeline Dot */}
@@ -33,7 +33,7 @@ export default function HowItWorks() {
               <h3 className="text-[#f0c674] text-lg font-semibold leading-normal mb-2">
                 {step.title}
               </h3>
-              <p className="text-[#ffd700] text-base font-normal leading-normal">
+              <p className="text-[#f0c674] text-base font-normal leading-normal">
                 {step.desc}
               </p>
             </div>

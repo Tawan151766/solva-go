@@ -3,7 +3,7 @@ export default function WhyChoose() {
     <section className="flex flex-col gap-10 px-4 py-10 @container">
       <div className="flex flex-col gap-4">
         <h1 className="text-[#f0c674] text-[32px] font-bold @[480px]:text-4xl">Luxury Advantages</h1>
-        <p className="text-[#ffd700] text-base font-normal">
+        <p className="text-[#f0c674] text-base font-normal">
           SolvaGo is dedicated to delivering premium excellence, ensuring your digital presence maintains the highest standards of luxury, security, and performance.
         </p>
       </div>
@@ -29,7 +29,7 @@ export default function WhyChoose() {
             <div className="text-[#f0c674]">
               <strong>{item.title}</strong>
             </div>
-            <p className="text-[#ffd700] text-sm">{item.desc}</p>
+            <p className="text-[#f0c674] text-sm">{item.desc}</p>
           </div>
         ))}
       </div>

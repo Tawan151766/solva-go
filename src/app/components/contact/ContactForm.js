@@ -13,7 +13,7 @@ export default function ContactForm() {
             </label>
             <input
               placeholder={`Enter your ${label.toLowerCase()}`}
-              className="w-full rounded-xl h-12 px-4 bg-[#21262d] text-[#f0c674] placeholder:text-[#ffd700] border border-transparent focus:border-[#f0c674] focus:ring-2 focus:ring-[#f0c674]/20 focus:outline-none transition-all duration-200"
+              className="w-full rounded-xl h-12 px-4 bg-[#21262d] text-[#f0c674] placeholder:text-[#f0c674] border border-transparent focus:border-[#f0c674] focus:ring-2 focus:ring-[#f0c674]/20 focus:outline-none transition-all duration-200"
               required
             />
           </div>
@@ -25,13 +25,13 @@ export default function ContactForm() {
           </label>
           <textarea
             placeholder="Share your premium vision and requirements..."
-            className="w-full rounded-xl min-h-32 p-4 bg-[#21262d] text-[#f0c674] placeholder:text-[#ffd700] border border-transparent focus:border-[#f0c674] focus:ring-2 focus:ring-[#f0c674]/20 focus:outline-none resize-none transition-all duration-200"
+            className="w-full rounded-xl min-h-32 p-4 bg-[#21262d] text-[#f0c674] placeholder:text-[#f0c674] border border-transparent focus:border-[#f0c674] focus:ring-2 focus:ring-[#f0c674]/20 focus:outline-none resize-none transition-all duration-200"
             required
           ></textarea>
         </div>
         <button 
           type="submit"
-          className="w-full h-12 px-6 rounded-xl bg-[#f0c674] hover:bg-[#ffd700] text-[#0d1117] font-semibold text-sm transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98] shadow-sm hover:shadow-md"
+          className="w-full h-12 px-6 rounded-xl bg-[#f0c674] hover:bg-[#f0c674] text-[#0d1117] font-semibold text-sm transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98] shadow-sm hover:shadow-md"
         >
           Request Premium Consultation
         </button>
