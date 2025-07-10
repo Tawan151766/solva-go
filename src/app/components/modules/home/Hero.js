@@ -12,8 +12,8 @@ export default function Hero() {
           <h2 className="text-white text-sm @[480px]:text-base">SolvaGo provides comprehensive website development and maintenance, ensuring your online presence is always at its best.</h2>
         </div>
         <div className="flex flex-wrap gap-3 justify-center">
-          <button className="h-10 @[480px]:h-12 px-4 @[480px]:px-5 rounded-lg bg-[#f4af00] text-[#1d180c] text-sm @[480px]:text-base font-bold">Get Started</button>
-          <button className="h-10 @[480px]:h-12 px-4 @[480px]:px-5 rounded-lg bg-[#f4f0e6] text-[#1d180c] text-sm @[480px]:text-base font-bold">Learn More</button>
+          <button className="h-10 @[480px]:h-12 px-4 @[480px]:px-5 rounded-lg bg-[#f4af00] text-[#1045a2] text-sm @[480px]:text-base font-bold hover:bg-[#e09e00] transition-colors">Get Started</button>
+          <button className="h-10 @[480px]:h-12 px-4 @[480px]:px-5 rounded-lg bg-[#1e40af] text-white text-sm @[480px]:text-base font-bold hover:bg-[#2563eb] transition-colors">Learn More</button>
         </div>
       </div>
     </section>

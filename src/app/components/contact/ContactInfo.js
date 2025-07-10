@@ -41,20 +41,20 @@ const contactItems = [
 
 export default function ContactInfo() {
   return (
-    <div className="bg-white rounded-2xl p-6 shadow-sm border border-[#eae1cd]">
-      <h3 className="text-[#1d180c] text-lg font-semibold mb-6">Contact Information</h3>
+    <div className="bg-[#1e40af] rounded-2xl p-6 shadow-sm border border-[#2563eb]">
+      <h3 className="text-white text-lg font-semibold mb-6">Contact Information</h3>
       
       <div className="space-y-4">
         {contactItems.map((item, idx) => (
-          <div key={idx} className="flex items-start gap-4 p-3 rounded-xl hover:bg-[#f4f0e6] transition-colors duration-200">
-            <div className="bg-[#f4af00] text-[#1d180c] rounded-lg flex items-center justify-center w-10 h-10 flex-shrink-0">
+          <div key={idx} className="flex items-start gap-4 p-3 rounded-xl hover:bg-[#2563eb] transition-colors duration-200">
+            <div className="bg-[#f4af00] text-[#1045a2] rounded-lg flex items-center justify-center w-10 h-10 flex-shrink-0">
               {item.icon}
             </div>
             <div className="flex-1 min-w-0">
-              <p className="text-[#1d180c] text-base font-medium break-words">
+              <p className="text-white text-base font-medium break-words">
                 {item.label}
               </p>
-              <p className="text-[#a18745] text-sm mt-1 capitalize">
+              <p className="text-[#7cb8ff] text-sm mt-1 capitalize">
                 {item.type}
               </p>
             </div>
@@ -63,8 +63,8 @@ export default function ContactInfo() {
       </div>
 
       {/* Social Links */}
-      <div className="mt-8 pt-6 border-t border-[#eae1cd]">
-        <h4 className="text-[#1d180c] text-base font-semibold mb-4">Follow Us</h4>
+      <div className="mt-8 pt-6 border-t border-[#2563eb]">
+        <h4 className="text-white text-base font-semibold mb-4">Follow Us</h4>
         <div className="flex gap-3">
           {[
             {
@@ -102,7 +102,7 @@ export default function ContactInfo() {
           ].map((social, idx) => (
             <button
               key={idx}
-              className="w-10 h-10 bg-[#f4f0e6] hover:bg-[#f4af00] rounded-lg flex items-center justify-center transition-all duration-200 hover:scale-110"
+              className="w-10 h-10 bg-[#2563eb] hover:bg-[#f4af00] text-white hover:text-[#1045a2] rounded-lg flex items-center justify-center transition-all duration-200 hover:scale-110"
               aria-label={`Follow us on ${social.name}`}
             >
               {social.icon}

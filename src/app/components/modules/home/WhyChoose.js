@@ -2,8 +2,8 @@ export default function WhyChoose() {
   return (
     <section className="flex flex-col gap-10 px-4 py-10 @container">
       <div className="flex flex-col gap-4">
-        <h1 className="text-[#1d180c] text-[32px] font-bold @[480px]:text-4xl">Key Benefits</h1>
-        <p className="text-[#1d180c] text-base font-normal">
+        <h1 className="text-white text-[32px] font-bold @[480px]:text-4xl">Key Benefits</h1>
+        <p className="text-[#7cb8ff] text-base font-normal">
           SolvaGo is committed to delivering exceptional service, ensuring your website remains secure, up-to-date, and performs optimally.
         </p>
       </div>
@@ -25,11 +25,11 @@ export default function WhyChoose() {
             icon: 'Presentation'
           }
         ].map((item, idx) => (
-          <div key={idx} className="flex flex-col gap-3 border rounded-lg p-4 bg-[#fcfbf8] border-[#eae1cd]">
-            <div className="text-[#1d180c]">
+          <div key={idx} className="flex flex-col gap-3 border rounded-lg p-4 bg-[#1e40af] border-[#2563eb] hover:bg-[#2563eb] transition-colors">
+            <div className="text-white">
               <strong>{item.title}</strong>
             </div>
-            <p className="text-[#a18745] text-sm">{item.desc}</p>
+            <p className="text-[#7cb8ff] text-sm">{item.desc}</p>
           </div>
         ))}
       </div>
