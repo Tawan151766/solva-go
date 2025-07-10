@@ -7,8 +7,8 @@ const contactItems = [
         <path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z" />
       </svg>
     ), 
-    label: 'support@solvago.com', 
-    type: 'email' 
+    label: 'premium@solvago.com', 
+    type: 'exclusive email' 
   },
   { 
     icon: (
@@ -16,8 +16,8 @@ const contactItems = [
         <path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46Z" />
       </svg>
     ), 
-    label: '+1 (555) 123-4567', 
-    type: 'phone' 
+    label: '+1 (555) 123-LUXE', 
+    type: 'premium hotline' 
   },
   { 
     icon: (
@@ -25,8 +25,8 @@ const contactItems = [
         <path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z" />
       </svg>
     ), 
-    label: '123 Business St, City, State 12345', 
-    type: 'address' 
+    label: '456 Luxury Plaza, Premium District, Elite City 90210', 
+    type: 'executive suite' 
   },
   { 
     icon: (
@@ -34,27 +34,27 @@ const contactItems = [
         <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z" />
       </svg>
     ), 
-    label: 'Mon - Fri: 9:00 AM - 6:00 PM', 
-    type: 'hours' 
+    label: 'Mon - Fri: 9:00 AM - 7:00 PM | Weekend by Appointment', 
+    type: 'concierge hours' 
   }
 ]
 
 export default function ContactInfo() {
   return (
-    <div className="bg-[#1e40af] rounded-2xl p-6 shadow-sm border border-[#2563eb]">
-      <h3 className="text-white text-lg font-semibold mb-6">Contact Information</h3>
+    <div className="bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-md rounded-2xl p-6 shadow-sm border border-white/20">
+      <h3 className="text-[#f0c674] text-lg font-semibold mb-6">Exclusive Contact Information</h3>
       
       <div className="space-y-4">
         {contactItems.map((item, idx) => (
-          <div key={idx} className="flex items-start gap-4 p-3 rounded-xl hover:bg-[#2563eb] transition-colors duration-200">
-            <div className="bg-[#f4af00] text-[#1045a2] rounded-lg flex items-center justify-center w-10 h-10 flex-shrink-0">
+          <div key={idx} className="flex items-start gap-4 p-3 rounded-xl hover:bg-gradient-to-br hover:from-white/30 hover:to-white/10 transition-colors duration-200">
+            <div className="bg-[#f0c674] text-[#0d1117] rounded-lg flex items-center justify-center w-10 h-10 flex-shrink-0">
               {item.icon}
             </div>
             <div className="flex-1 min-w-0">
-              <p className="text-white text-base font-medium break-words">
+              <p className="text-[#f0c674] text-base font-medium break-words">
                 {item.label}
               </p>
-              <p className="text-[#7cb8ff] text-sm mt-1 capitalize">
+              <p className="text-[#f0c674] text-sm mt-1 capitalize">
                 {item.type}
               </p>
             </div>
@@ -63,8 +63,8 @@ export default function ContactInfo() {
       </div>
 
       {/* Social Links */}
-      <div className="mt-8 pt-6 border-t border-[#2563eb]">
-        <h4 className="text-white text-base font-semibold mb-4">Follow Us</h4>
+      <div className="mt-8 pt-6 border-t border-[#22c55e]">
+        <h4 className="text-[#d99201] text-base font-semibold mb-4">Follow Us</h4>
         <div className="flex gap-3">
           {[
             {
@@ -102,7 +102,7 @@ export default function ContactInfo() {
           ].map((social, idx) => (
             <button
               key={idx}
-              className="w-10 h-10 bg-[#2563eb] hover:bg-[#f4af00] text-white hover:text-[#1045a2] rounded-lg flex items-center justify-center transition-all duration-200 hover:scale-110"
+              className="w-10 h-10 bg-[#21262d] hover:bg-[#f0c674] text-[#f0c674] hover:text-[#0d1117] rounded-lg flex items-center justify-center transition-all duration-200 hover:scale-110"
               aria-label={`Follow us on ${social.name}`}
             >
               {social.icon}

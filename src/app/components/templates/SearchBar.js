@@ -14,7 +14,7 @@ export default function SearchBar({ onSearch }) {
     <div className="px-4 py-3">
       <label className="flex flex-col min-w-40 h-12 w-full">
         <div className="flex w-full flex-1 items-stretch rounded-xl h-full">
-          <div className="border-white border-1 border-solid text-[#7cb8ff] flex border-none bg-[#1e40af] items-center justify-center pl-4 rounded-l-xl border-r-0">
+          <div className="border-white border-1 border-solid text-[#f0c674] flex border-none bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-md items-center justify-center pl-4 rounded-l-xl border-r-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24px"
@@ -26,8 +26,8 @@ export default function SearchBar({ onSearch }) {
             </svg>
           </div>
           <input
-            placeholder="Search templates"
-            className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border-none bg-[#1e40af] focus:border-none h-full placeholder:text-[#7cb8ff] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal border-white border-1 border-solid"
+            placeholder="Search premium templates"
+            className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#f0c674] focus:outline-0 focus:ring-0 border-none bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-md focus:border-none h-full placeholder:text-[#f0c674] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal border-white border-1 border-solid"
             value={searchTerm}
             onChange={handleChange}
           />

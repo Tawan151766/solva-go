@@ -3,44 +3,44 @@ import PageHeader from "../components/layout/PageHeader";
 export default function ServicesPage() {
   const services = [
     {
-      title: "Web Development",
-      description: "Custom websites built with modern technologies and best practices.",
-      features: ["Responsive Design", "SEO Optimized", "Fast Loading", "Mobile-First"],
-      price: "Starting at $2,500"
+      title: "Premium Web Development",
+      description: "Bespoke websites crafted with cutting-edge technologies and luxury design principles.",
+      features: ["Luxury Design", "Premium SEO", "Elite Performance", "Exclusive Mobile Experience"],
+      price: "Starting at $12,500"
     },
     {
-      title: "Website Maintenance",
-      description: "Keep your website secure, updated, and performing at its best.",
-      features: ["Security Updates", "Content Updates", "Performance Monitoring", "24/7 Support"],
-      price: "Starting at $299/month"
+      title: "White-Glove Maintenance",
+      description: "Exclusive website care with premium security, updates, and concierge-level support.",
+      features: ["Enterprise Security", "Priority Updates", "Performance Excellence", "24/7 VIP Support"],
+      price: "Starting at $1,299/month"
     },
     {
-      title: "E-commerce Solutions",
-      description: "Complete online store setup with payment integration and inventory management.",
-      features: ["Payment Gateway", "Inventory Management", "Order Tracking", "Customer Portal"],
-      price: "Starting at $3,500"
+      title: "Luxury E-commerce Solutions",
+      description: "Elite online store experiences with premium payment solutions and sophisticated inventory management.",
+      features: ["Premium Payment Gateway", "Advanced Inventory", "Executive Order Tracking", "VIP Customer Portal"],
+      price: "Starting at $8,500"
     },
     {
-      title: "Digital Marketing",
-      description: "Boost your online presence with our comprehensive digital marketing services.",
-      features: ["SEO Optimization", "Social Media", "Content Marketing", "Analytics"],
-      price: "Starting at $899/month"
+      title: "Elite Digital Marketing",
+      description: "Elevate your brand presence with our premium digital marketing and luxury branding services.",
+      features: ["Premium SEO", "Luxury Social Media", "Elite Content Marketing", "Executive Analytics"],
+      price: "Starting at $2,499/month"
     }
   ];
 
   return (
-    <div className="min-h-screen bg-[#1045a2] font-sans">
-      <PageHeader title="Our Services" />
+    <div className="min-h-screen bg-[#0d1117] font-sans">
+      <PageHeader title="Premium Services" />
 
       {/* Main Content */}
       <main className="max-w-4xl mx-auto px-4 py-6">
         <div className="text-center mb-12">
-          <h2 className="text-white text-3xl font-bold mb-4">
-            Professional Web Solutions
+          <h2 className="text-[#f0c674] text-3xl font-bold mb-4">
+            Luxury Digital Solutions
           </h2>
-          <p className="text-[#7cb8ff] text-lg max-w-2xl mx-auto">
-            We offer comprehensive web services to help your business succeed online. 
-            From development to maintenance, we've got you covered.
+          <p className="text-[#f0c674] text-lg max-w-2xl mx-auto">
+            We deliver exclusive digital experiences to elevate your brand with luxury craftsmanship and premium excellence. 
+            From bespoke development to white-glove maintenance, we provide unparalleled service.
           </p>
         </div>
 

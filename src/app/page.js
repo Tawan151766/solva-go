@@ -9,7 +9,7 @@ import WhyChoose from "./components/modules/home/WhyChoose";
 
 export default function Home() {
   return (
-    <main className='min-h-screen flex flex-col bg-[#1045a2] justify-between overflow-x-hidden font-["Work Sans","Noto Sans",sans-serif]'>
+    <main className='min-h-screen flex flex-col bg-[#0d1117] justify-between overflow-x-hidden font-["Work Sans","Noto Sans",sans-serif]'>
       <PageHeader title="Home" /> <Hero />
       <ServicesOverview />
       <WhyChoose />

@@ -47,7 +47,7 @@ export default function TemplatesPage() {
 
   return (
     <MainLayout>
-      <PageHeader title="Templates" />
+      <PageHeader title="Premium Templates" />
       <div className="flex-1 overflow-y-auto">
         <SearchBar onSearch={handleSearch} />
         <FilterBar activeFilter={activeFilter} onFilterChange={handleFilterChange} />
