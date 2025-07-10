@@ -1,7 +1,7 @@
 export default function TemplateCard({ template, onClick }) {
   return (
     <div 
-      className="flex flex-col gap-3 pb-3 cursor-pointer hover:opacity-80 transition-opacity"
+      className="flex flex-col gap-3 pb-3 cursor-pointer hover:scale-105 transition-all duration-200"
       onClick={() => onClick(template)}
     >
       <div
@@ -9,10 +9,10 @@ export default function TemplateCard({ template, onClick }) {
         style={{ backgroundImage: `url("${template.image}")` }}
       ></div>
       <div>
-        <p className="text-[#d99201] text-base font-medium leading-normal">
+        <p className="text-[#f0c674] text-base font-medium leading-normal">
           {template.title}
         </p>
-        <p className="text-[#4ade80] text-sm font-normal leading-normal">
+        <p className="text-[#f0c674] text-sm font-normal leading-normal">
           {template.description}
         </p>
       </div>

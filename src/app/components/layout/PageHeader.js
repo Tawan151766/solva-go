@@ -27,7 +27,7 @@ export default function PageHeader({
         )}
         
         {title && (
-          <h1 className="text-[#d99201] text-xl font-bold text-center">
+          <h1 className="text-[#f0c674] text-xl font-bold text-center">
             {title}
           </h1>
         )}
