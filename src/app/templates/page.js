@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useMemo } from 'react';
+import { useRouter } from 'next/navigation';
 import MainLayout from '../components/layout/MainLayout';
 import PageHeader from '../components/layout/PageHeader';
 import SearchBar from '../components/templates/SearchBar';
@@ -10,7 +11,9 @@ import { templatesData } from '../data/templates';
 
 export default function TemplatesPage() {
   const [searchTerm, setSearchTerm] = useState('');
-  const [activeFilter, setActiveFilter] = useState('All');
+  const [activeBu, setActiveBu] = useState('All');
+  const [activeTheme, setActiveTheme] = useState('All');
+  const router = useRouter();
 
   const filteredTemplates = useMemo(() => {
     let filtered = templatesData;
@@ -24,25 +27,33 @@ export default function TemplatesPage() {
       );
     }
 
-    // Filter by category
-    if (activeFilter !== 'All') {
-      filtered = filtered.filter(template => template.category === activeFilter);
+    // Filter by bu
+    if (activeBu !== 'All') {
+      filtered = filtered.filter(template => template.bu === activeBu);
+    }
+
+    // Filter by theme (theme is now an array)
+    if (activeTheme !== 'All') {
+      filtered = filtered.filter(template => Array.isArray(template.theme) && template.theme.includes(activeTheme));
     }
 
     return filtered;
-  }, [searchTerm, activeFilter]);
+  }, [searchTerm, activeBu, activeTheme]);
 
   const handleSearch = (term) => {
     setSearchTerm(term);
   };
 
-  const handleFilterChange = (filter) => {
-    setActiveFilter(filter);
+  const handleBuChange = (bu) => {
+    setActiveBu(bu);
+  };
+
+  const handleThemeChange = (theme) => {
+    setActiveTheme(theme);
   };
 
   const handleTemplateClick = (template) => {
-    // Handle template selection (could open modal, navigate, etc.)
-    console.log('Template clicked:', template);
+    router.push(`/templates/${template.id}`);
   };
 
   return (
@@ -50,7 +61,7 @@ export default function TemplatesPage() {
       <PageHeader title="Premium Templates" />
       <div className="flex-1 overflow-y-auto">
         <SearchBar onSearch={handleSearch} />
-        <FilterBar activeFilter={activeFilter} onFilterChange={handleFilterChange} />
+        <FilterBar activeBu={activeBu} onBuChange={handleBuChange} activeTheme={activeTheme} onThemeChange={handleThemeChange} />
         <TemplateGrid templates={filteredTemplates} onTemplateClick={handleTemplateClick} />
       </div>
     </MainLayout>
