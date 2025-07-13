@@ -18,7 +18,7 @@ export default function PageHeader({
   };
 
   return (
-    <header className={`sticky top-0 z-10 bg-[#0d1117] border-b border-[#22c55e] ${className}`}>
+    <header className={`sticky top-0 z-10 bg-[#0d1117] border-b border-[#f0c674] ${className}`}>
       <div className="flex items-center justify-between p-4">
         {showBackButton ? (
           <BackButton onClick={handleBackClick} />
